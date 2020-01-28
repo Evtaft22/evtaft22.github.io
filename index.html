@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>The Website</title>
+        <style>
+            body {
+                background: rgb(0, 0, 120);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: impact;
+            }
+            header {
+                font-size: 4em;
+                font-weight: bold;
+                color: rgb(0, 184, 230);
+            }
+            #all-contents {
+                max-width: 900px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(0, 184, 230);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                margin-left: -200px;
+                margin-right: -200px;
+                display: flex;
+                padding: 25px;
+                border-radius: 10px 65px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(0, 0, 120);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: block;
+                color: rgb(0, 0, 0);
+                font-size: 1.5em;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(205, 171, 126);
+                display: flex;
+                border-radius: 20px;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 160px;
+            }
+            .sidebar img {
+                width: 425px;
+                margin-top: -130px;
+                margin-right: -130px;
+                margin-left: -130px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 3em;
+                color: rgb(0, 184, 230);
+            }
+            .interests ul {
+                font-size: 1.75em;
+            }
+            .content p {
+                font-size: 1.75em;
+                font-weight: bold;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="all-contents"> 
+            <nav>
+                <header>The Website</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+
+
+                <main>
+                <div class="sidebar">
+                    <img src="https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg">
+                </div>
+
+                <div class="content">
+                    <header>Evan Taft</header>
+                    <p>Student at Operation Spark</p>
+                      <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Cooking</li>
+                            <li>Film</li>
+                            <li>Music</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
