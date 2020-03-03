@@ -86,7 +86,7 @@ function capitalizeWord(string) {
 // Function 6 - Capitalize All Words /////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-//Function to capitalize every word in a mulity word string.
+//Function to capitalize every word in a multy word string.
 function capitalizeAllWords(string) {
 //Initialize a variable with the value of the string split at each space.
     var words = string.split(" ");
