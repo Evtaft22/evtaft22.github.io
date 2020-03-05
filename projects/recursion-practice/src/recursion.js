@@ -6,18 +6,20 @@
 // factorial(5);  // 120
 var factorial = function(n) {
   //base case
-  //when n === 0, return it
+  //when n === 0, return 1
   if(n === 0){
-    //if true, return the factorial
-    return n;
-  }else if(Math.sign(n) === -1){
+    return 1;
+    //if n is negative, return null
+  }else if(n < 0){
     return null;
   }
   //recursive case
-  //when n !== 0, multiply n by the recursive function call until n === 0
+  //when n !== 0 or a negative number, multiply n by the recursive function call until n === 0
   //function call should pass n - 1 before retesting
   return n * factorial(n - 1);
 };
+
+
 
 // 2. Compute the sum of an array of integers.
 // Example:  sum([1, 2, 3, 4, 5, 6]);  // 21
@@ -36,10 +38,14 @@ var sum = function(array) {
   return array[0] + sum(array.slice(1));
 };
 
+
+
 // 3. Sum all numbers in an array containing nested arrays.
 // Example: arraySum([1,[2,3],[[4]],5]); // 15
 var arraySum = function(array) {
 };
+
+
 
 // 4. Check if a number is even.
 var isEven = function(n) {
@@ -50,23 +56,45 @@ var isEven = function(n) {
   //if n eventually equals 1, then it is odd, so return false
   }else if(n === 1){
     return false;
-  }else if(Math.sign(n) === -1){
-    return 
+  //recursive case
+  //if n is negative, add 2 to n and pass that through the function and return it
+  }else if(n < 0){
+    return isEven(n + 2);
   }
   //recursive case
   //call function with the argument of n - 2 to test again
   return isEven(n - 2);
 };
 
+
+
 // 5. Sum all integers below a given integer.
 // sumBelow(10); // 45
 // sumBelow(7); // 21
 var sumBelow = function(n) {
+  //add every number between n and 0 together
+  //this will not include n in the sum
+  //base case
+  
+  
+   //base case
+  //when n === 0, return 1
+  if(n === 0){
+    return 1;
+    //if n is negative, return null
+  }
+  // else if(n < 0){
+  //   return null;
+  // }
+    //recursive case
+    return n + sumBelow((n - 1) - n);
+  
 };
 
 // 6. Get the integers in range (x, y).
 // Example:  range(2, 9);  // [3, 4, 5, 6, 7, 8]
 var range = function(x, y) {
+  //can't divide decimals,,, 5*5 over 1 so at end divide by 1 (inverse)
 };
 
 // 7. Compute the exponent of a number.
